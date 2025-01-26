@@ -1,0 +1,30 @@
+body{
+  background-color: rgba(127, 79, 204, 0.829);
+  display: flex;
+}
+
+
+img {
+  width: 400px;
+  height: 400px;
+
+}
+
+.button{
+  margin-top: 20px;
+  padding: 19px 39px ;
+  cursor: pointer;
+  
+
+}
+
+h1{
+  color: rgb(10, 16, 19);
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+
+
+
+
