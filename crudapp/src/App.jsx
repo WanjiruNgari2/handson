@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import GuestList from './GuestList'
 import GuestForm from './GuestForm'
 import './App.css'
@@ -23,8 +23,8 @@ const addTheGuest = (guest) => {
 const updateTheGuest = (id, guest) => {
   updateGuest(id, guest)
   .then((data) => {
-    const newGuests = guests.map((g) => g.id === id ? data : g)
-    setGuests(newGuests)
+    setGuests(guests.map((g) => (g.id === id ? data : g)))
+    setGuests(null)
   })
   .catch((error) => console.log('error updating guest'))
 };
